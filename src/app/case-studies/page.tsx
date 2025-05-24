@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <div className="bg-[#F9F7f4] min-h-screen">
+    <div className="bg-[#F9F7f4] min-h-screen px-4 md:px-0">
       <Navbar />
       <main className="flex mx-auto" aria-label="page content">
         <div className="flex flex-col gap-6 items-center pt-2 pb-8 sm:pb-16 mx-auto">
