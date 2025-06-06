@@ -1,5 +1,6 @@
-import { ArrowRightIcon } from "lucide-react";
+import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRightIcon } from "lucide-react";
 
 import {
   Accordion,
@@ -11,7 +12,12 @@ import { buttonVariants } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 import { cn } from "@/lib/utils";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Case Studies",
+  description: "Our case studies and projects.",
+};
+
+export default function CaseStudies() {
   return (
     <div className="bg-[#F9F7f4] min-h-screen px-4 md:px-0">
       <Navbar />

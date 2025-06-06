@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
+
 import { Navbar } from "@/components/navbar";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Contact us for any questions or inquiries.",
+};
+
+export default function ContactUs() {
   return (
     <div className="bg-[#F9F7f4] min-h-screen px-4 md:px-0">
       <Navbar />
