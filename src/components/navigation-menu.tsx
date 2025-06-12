@@ -18,7 +18,7 @@ export function NavbarMenu() {
       <NavigationMenu className="hidden md:flex">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="/case-studies" passHref>
+            <Link href="/about-us" passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 About Us
               </NavigationMenuLink>
