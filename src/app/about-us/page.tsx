@@ -17,7 +17,7 @@ export default function ContactUs() {
             <h3 className="text-gray-900 mb-1 text-lg leading-8 font-semibold">
               Who we are...
             </h3>
-            <div className="space-y-2">
+            <div className="space-y-4 sm:space-y-2">
               <div className="text-gray-900 text-sm leading-6 min-w-full">
                 We are a young, vibrant tech company with a deep passion for
                 data and software. Our core focus? Crafting powerful data

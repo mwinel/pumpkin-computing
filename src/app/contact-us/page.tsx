@@ -19,14 +19,14 @@ export default function ContactUs() {
             <h3 className="text-gray-900 mb-1 text-lg leading-8 font-semibold">
               Talk to us
             </h3>
-            <div className="space-y-2">
+            <div className="space-y-4 sm:space-y-2">
               <div className="text-gray-900 text-sm leading-6 min-w-full">
                 Ready to jump on the collaboration train with us? Just send us
                 an email on{" "}
                 <span className="font-bold">hello@pumpkincomputing.com</span>{" "}
                 and real human will initiate conversation with you via google.
               </div>
-              <div className="flex items-center gap-1 text-gray-900 text-sm leading-6 min-w-full">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1 text-gray-900 text-sm leading-6 min-w-full">
                 Comfortable with whatsapp? Reach out to us on:{" "}
                 <span className="font-bold inline-flex items-center gap-1">
                   <MessageCircle className="w-4 h-4" />
