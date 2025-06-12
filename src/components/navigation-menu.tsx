@@ -20,6 +20,13 @@ export function NavbarMenu() {
           <NavigationMenuItem>
             <Link href="/case-studies" passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                About Us
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Link href="/case-studies" passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Case Studies
               </NavigationMenuLink>
             </Link>

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { MessageCircle, Calendar } from "lucide-react";
 
 import { Navbar } from "@/components/navbar";
 
@@ -17,11 +19,32 @@ export default function ContactUs() {
             <h3 className="text-gray-900 mb-1 text-lg leading-8 font-semibold">
               Talk to us
             </h3>
-            <div className="text-gray-900 text-sm leading-6 min-w-full">
-              Ready to jump on the collaboration train with us? Just send us an
-              email on{" "}
-              <span className="font-bold">hello@pumpkincomputing.com</span> and
-              real human will initiate conversation with you via google.
+            <div className="space-y-2">
+              <div className="text-gray-900 text-sm leading-6 min-w-full">
+                Ready to jump on the collaboration train with us? Just send us
+                an email on{" "}
+                <span className="font-bold">hello@pumpkincomputing.com</span>{" "}
+                and real human will initiate conversation with you via google.
+              </div>
+              <div className="flex items-center gap-1 text-gray-900 text-sm leading-6 min-w-full">
+                Comfortable with whatsapp? Reach out to us on:{" "}
+                <span className="font-bold inline-flex items-center gap-1">
+                  <MessageCircle className="w-4 h-4" />
+                  +256 705 777086
+                </span>
+              </div>
+              <div className="flex items-center gap-1 text-gray-900 text-sm leading-6 min-w-full">
+                Want to schedule a meeting?{" "}
+                <Link
+                  href="https://cal.com/pumpkin-computing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold inline-flex items-center gap-1 hover:text-gray-700 transition-colors"
+                >
+                  <Calendar className="w-4 h-4" />
+                  Book a call
+                </Link>
+              </div>
             </div>
           </div>
         </div>

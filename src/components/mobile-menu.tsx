@@ -33,8 +33,8 @@ export function MobileMenu() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48">
         <DropdownMenuItem asChild>
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className={cn(
               "cursor-pointer w-full",
               isActive("/") && "bg-accent"
@@ -44,8 +44,19 @@ export function MobileMenu() {
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link 
-            href="/case-studies" 
+          <Link
+            href="/about-us"
+            className={cn(
+              "cursor-pointer w-full",
+              isActive("/about-us") && "bg-accent"
+            )}
+          >
+            About Us
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <Link
+            href="/case-studies"
             className={cn(
               "cursor-pointer w-full",
               isActive("/case-studies") && "bg-accent"
@@ -55,8 +66,8 @@ export function MobileMenu() {
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link 
-            href="/contact-us" 
+          <Link
+            href="/contact-us"
             className={cn(
               "cursor-pointer w-full",
               isActive("/contact-us") && "bg-accent"
