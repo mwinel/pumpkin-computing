@@ -10,6 +10,7 @@ import {
 } from "@/components/animate-ui/radix/accordion";
 import { buttonVariants } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
+import { CaseStudyLink } from "@/components/case-study-link";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -44,6 +45,7 @@ export default function CaseStudies() {
                   <br /> Our team delivered a comprehensive digital
                   transformation solution that revolutionized their data
                   collection, processing, and analysis capabilities.
+                  <CaseStudyLink href="/c/1" variant="link" showArrow={false} />
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
@@ -58,11 +60,12 @@ export default function CaseStudies() {
                   integration of distributed ledger technology with educational
                   systems to create decentralized learning experiences for
                   students and educators.
+                  <CaseStudyLink href="/c/2" variant="link" showArrow={false} />
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>
-                  Case Study 2: Destination Management System, Karama
+                  Case Study 3: Destination Management System, Karama
                   Expeditions
                 </AccordionTrigger>
                 <AccordionContent>
@@ -78,6 +81,7 @@ export default function CaseStudies() {
                   operational efficiency for the expedition company and customer
                   convenience, transforming how travel bookings are managed and
                   paid for in the Ugandan tourism market.
+                  <CaseStudyLink href="/c/3" variant="link" showArrow={false} />
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

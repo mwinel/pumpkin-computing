@@ -6,7 +6,6 @@ import Link from "next/link";
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
@@ -18,24 +17,18 @@ export function NavbarMenu() {
       <NavigationMenu className="hidden md:flex">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="/about-us" passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                About Us
-              </NavigationMenuLink>
+            <Link href="/about-us" className={navigationMenuTriggerStyle()}>
+              About Us
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/case-studies" passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Case Studies
-              </NavigationMenuLink>
+            <Link href="/case-studies" className={navigationMenuTriggerStyle()}>
+              Case Studies
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/contact-us" passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Contact Us
-              </NavigationMenuLink>
+            <Link href="/contact-us" className={navigationMenuTriggerStyle()}>
+              Contact Us
             </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
