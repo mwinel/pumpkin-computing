@@ -27,17 +27,17 @@ const components = {
   ),
   h4: (props: HeadingProps) => <h4 className="font-medium" {...props} />,
   p: (props: ParagraphProps) => (
-    <p className="text-gray-800 dark:text-zinc-300 leading-relaxed" {...props} />
+    <p className="text-gray-800 text-[15px] dark:text-zinc-300 leading-relaxed" {...props} />
   ),
   ol: (props: ListProps) => (
     <ol
-      className="text-gray-800 dark:text-zinc-300 list-decimal pl-5 space-y-2"
+      className="text-gray-800 text-[15px] dark:text-zinc-300 list-decimal pl-5 space-y-2"
       {...props}
     />
   ),
   ul: (props: ListProps) => (
     <ul
-      className="text-gray-800 dark:text-zinc-300 list-disc pl-5 space-y-1"
+      className="text-gray-800 dark:text-zinc-300 text-[15px] list-disc pl-5 space-y-1"
       {...props}
     />
   ),
