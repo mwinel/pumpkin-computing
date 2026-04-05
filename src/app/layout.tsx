@@ -9,17 +9,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pumpkincomputing.com"),
+  applicationName: "Pumpkin Computing",
   title: {
-    default: "Pumpkin Computing",
+    default: "Pumpkin Computing | Enterprise AI, ML, and Data Automation",
     template: "%s | Pumpkin Computing",
   },
-  description: "Simple solutions for complex problems.",
+  description:
+    "Pumpkin Computing builds enterprise AI, ML, data automation, analytics, and custom software systems that turn complex operations into measurable business outcomes.",
   keywords: [
-    "Data Engineering",
-    "Data Visualization",
-    "Data Analytics",
-    "Software Architecture",
-    "Software Development",
+    "enterprise AI solutions",
+    "machine learning consulting",
+    "data automation tools",
+    "data engineering services",
+    "business intelligence dashboards",
+    "software architecture services",
+    "custom enterprise software development",
+    "data analytics for enterprises",
+    "AI software development company",
   ],
   authors: [
     {
@@ -28,21 +35,43 @@ export const metadata: Metadata = {
     },
   ],
   creator: "Pumpkin Computing",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://pumpkincomputing.com",
-    title: "Pumpkin Computing",
-    description: "Simple solutions for complex problems.",
+    url: "/",
+    title: "Pumpkin Computing | Enterprise AI, ML, and Data Automation",
+    description:
+      "Enterprise-focused AI/ML, analytics, data engineering, and custom software solutions designed for growth, performance, and measurable impact.",
     siteName: "Pumpkin Computing",
     images: [
       {
-        url: "https://pumpkincomputing.com/opengraph-image.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Pumpkin Computing",
+        alt: "Pumpkin Computing - Enterprise AI and Data Automation",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pumpkin Computing | Enterprise AI, ML, and Data Automation",
+    description:
+      "We build enterprise-grade AI/ML, data automation, analytics, and custom software tools.",
+    images: ["/twitter-image"],
   },
   icons: {
     icon: "/favicon.ico",

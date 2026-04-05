@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRightIcon } from "lucide-react";
+import Script from "next/script";
 
 import {
   Accordion,
@@ -14,20 +15,42 @@ import { CaseStudyLink } from "@/components/case-study-link";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Case Studies",
-  description: "Our case studies and projects.",
+  title: "Case Studies - AI, Data Engineering, and Enterprise Software",
+  description:
+    "Explore Pumpkin Computing case studies across data engineering, analytics, enterprise software architecture, and industry-specific digital transformation.",
+  alternates: {
+    canonical: "/case-studies",
+  },
 };
 
 export default function CaseStudies() {
+  const caseStudiesSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Pumpkin Computing Case Studies",
+    url: "https://pumpkincomputing.com/case-studies",
+    description:
+      "Case studies highlighting enterprise data engineering, analytics, and software delivery outcomes.",
+  };
+
   return (
     <div className="bg-[#F9F7f4] min-h-screen px-4 md:px-0">
+      <Script
+        id="case-studies-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudiesSchema) }}
+      />
       <Navbar />
       <main className="flex mx-auto" aria-label="page content">
         <div className="flex flex-col gap-6 items-center pt-2 pb-8 sm:pb-16 mx-auto">
           <div className="bg-[#f2efe9] max-w-2xl w-full rounded-xl p-6 sm:p-10">
-            <h3 className="text-gray-900 mb-1 text-lg leading-8 font-semibold">
-              We have been busy...
-            </h3>
+            <h1 className="text-gray-900 mb-1 text-lg leading-8 font-semibold">
+              Enterprise case studies
+            </h1>
+            <p className="text-gray-900 text-sm leading-6 mb-3">
+              Real projects where we delivered measurable outcomes using data
+              engineering, analytics, and enterprise software development.
+            </p>
             <Accordion type="single" defaultValue="item-1" collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger>
