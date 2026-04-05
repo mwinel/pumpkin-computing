@@ -25,10 +25,17 @@ export default function OpenGraphImage() {
       >
         <div style={{ fontSize: 32, opacity: 0.9 }}>Pumpkin Computing</div>
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <div style={{ fontSize: 64, fontWeight: 700, lineHeight: 1.1 }}>
-            Enterprise AI, ML,
-            <br />
-            and Data Automation
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              fontSize: 64,
+              fontWeight: 700,
+              lineHeight: 1.1,
+            }}
+          >
+            <span>Enterprise AI, ML,</span>
+            <span>and Data Automation</span>
           </div>
           <div style={{ fontSize: 30, opacity: 0.9 }}>
             Analytics, data engineering, and custom software for measurable growth
