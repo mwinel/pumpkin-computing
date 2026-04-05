@@ -1,5 +1,7 @@
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
+import Script from "next/script";
+import type { Metadata } from "next";
 
 import {
   Accordion,
@@ -11,29 +13,67 @@ import { Navbar } from "@/components/navbar";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
+export const metadata: Metadata = {
+  title: "Enterprise AI, ML, and Data Automation Solutions",
+  description:
+    "Pumpkin Computing helps enterprises design and build AI-powered data automation, analytics platforms, and custom software systems for measurable growth.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Enterprise AI, ML, and Data Automation Solutions",
+    description:
+      "Enterprise AI/ML consulting, data engineering, analytics, and software architecture tailored to complex business operations.",
+    url: "/",
+  },
+};
+
 export default function Home() {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Pumpkin Computing",
+    url: "https://pumpkincomputing.com",
+    description:
+      "Pumpkin Computing builds enterprise AI, machine learning, data automation, analytics, and software systems.",
+    areaServed: "Global",
+    serviceType: [
+      "AI Consulting",
+      "Machine Learning Solutions",
+      "Data Engineering",
+      "Data Analytics",
+      "Software Architecture",
+      "Custom Software Development",
+    ],
+  };
+
   return (
     <div className="bg-[#F9F7f4] min-h-screen px-4 md:px-0">
+      <Script
+        id="organization-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
       <Navbar />
       <main className="flex mx-auto" aria-label="page content">
         <div className="flex flex-col gap-6 items-center pt-2 pb-8 sm:pb-16 mx-auto">
           <div className="bg-[#1e1e1e] max-w-2xl w-full rounded-xl p-6 sm:p-10">
-            <h2 className="text-white mb-4 sm:mb-6 text-2xl leading-8 font-semibold">
-              Simple solutions for complex problems.
-            </h2>
+            <h1 className="text-white mb-4 sm:mb-6 text-2xl leading-8 font-semibold">
+              Enterprise AI, ML, and data automation solutions.
+            </h1>
             <div className="text-white text-base leading-5">
               Our team is committed to understanding your unique challenges and
-              building powerful, data-driven solutions that go beyond
-              aesthetics—to deliver real impact. Whether you're a startup, a
-              growing business, or a large enterprise, we create scalable,
-              intuitive, and high-performance tools that help you harness your
-              full potential of ahead of your competition.
+              building powerful, AI-driven solutions that go beyond
+              aesthetics to deliver measurable impact. Whether you are a
+              startup, a growing business, or a large enterprise, we build
+              scalable, intuitive, and high-performance systems that help you
+              automate workflows, analyze data, and outperform the competition.
             </div>
           </div>
           <div className="bg-[#b9e9c5] max-w-2xl w-full rounded-xl p-6 sm:p-10">
-            <h3 className="text-gray-900 mb-1 text-lg leading-8 font-semibold">
+            <h2 className="text-gray-900 mb-1 text-lg leading-8 font-semibold">
               Our Mission
-            </h3>
+            </h2>
             <div className="text-gray-900 text-sm leading-6">
               To design and build simple, scalable and user-centric big data
               tools that help organizations unlock the power of their data,
@@ -43,9 +83,9 @@ export default function Home() {
           </div>
 
           <div className="bg-[#f2efe9] max-w-2xl w-full rounded-xl p-6 sm:p-10">
-            <h3 className="text-gray-900 mb-1 text-lg leading-8 font-semibold">
-              What we do
-            </h3>
+            <h2 className="text-gray-900 mb-1 text-lg leading-8 font-semibold">
+              What we do for enterprises
+            </h2>
             <Accordion type="single" defaultValue="item-1" collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger>Data Engineering</AccordionTrigger>
